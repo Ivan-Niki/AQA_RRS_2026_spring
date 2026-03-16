@@ -67,9 +67,9 @@ result = a + b
 str_result = f"Сумма первого и второго числа равна {a + b}"
 
 print(result)
-print(type(result))
+print(type(result)) # тип выводимых данных - число (int)
 
 print(str_result)
-print(type(str_result))
+print(type(str_result)) # тип выводимых данных - строка (str)
 
 
