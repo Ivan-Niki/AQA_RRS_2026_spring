@@ -84,4 +84,3 @@ if age >= 18 or admin == True:
     print("Доступ разрешён!")
 else:
     print("Доступ запрещён!")
-
