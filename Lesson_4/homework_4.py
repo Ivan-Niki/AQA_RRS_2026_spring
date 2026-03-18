@@ -1,5 +1,4 @@
 # ========================== Домашнее задание (занятие 4) =========================
-from pyexpat.errors import messages
 
 # -------------------------- Задание 1. Особые числа. -------------------------
 # Сгенерируйте список numbers, состоящий из чисел в диапазоне от 0 до 100 включительно,
@@ -7,31 +6,31 @@ from pyexpat.errors import messages
 # Выведите список numbers на экран.
 # Ответ: [0, 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 72, 78, 84, 90, 96]
 
-# numbers = []
-#
-# for i in range(101):
-#     if i % 2 == 0 and i % 3 == 0:
-#         numbers.append(i)
-#
-# print(numbers)
+numbers = []
+
+for i in range(101):
+    if i % 2 == 0 and i % 3 == 0:
+        numbers.append(i)
+
+print(numbers)
 
 
 # -------------------------- Задание 2. Фильтр. -------------------------
 # Имеется список items = [1.2, 3, None, 100, {'info': 'bla-bla'}, 44, 'Hi!', 99, 44.32, None]
-# Составьте новый список numbers, который содержит только целые числа (int) и вещественные числа (float) из списка items.
-# Выведите на экран сумму чисел в numbers.
+# Составьте новый список numbers2, который содержит только целые числа (int) и вещественные числа (float) из списка items.
+# Выведите на экран сумму чисел в numbers2.
 
 # Ответ:  291.52
 
 items = [1.2, 3, None, 100, {'info': 'bla-bla'}, 44, 'Hi!', 99, 44.32, None]
-numbers = []
+numbers2 = []
 
 for item in items:
     if type(item) == int or type(item) == float:
-        numbers.append(item)
+        numbers2.append(item)
 
-print(numbers)
-print(sum(numbers))
+print(numbers2)
+print(sum(numbers2))
 
 
 # -------------------------- Задание 3. История сообщений. -------------------------
